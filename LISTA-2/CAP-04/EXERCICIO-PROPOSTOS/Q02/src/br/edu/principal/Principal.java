@@ -6,23 +6,23 @@ public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Variáveis para armazenar as notas e média
+
         double nota1, nota2, media;
 
-        // Solicita as duas notas ao aluno
+        
         System.out.println("Digite a primeira nota:");
         nota1 = scanner.nextDouble();
         
         System.out.println("Digite a segunda nota:");
         nota2 = scanner.nextDouble();
         
-        // Calcula a média aritmética
+        
         media = (nota1 + nota2) / 2;
 
-        // Exibe a média
+        
         System.out.println("Média do aluno: " + media);
 
-        // Verifica e exibe a mensagem de acordo com a média
+        
         if (media >= 0 && media < 3) {
             System.out.println("Reprovado");
         } else if (media >= 3 && media < 7) {
