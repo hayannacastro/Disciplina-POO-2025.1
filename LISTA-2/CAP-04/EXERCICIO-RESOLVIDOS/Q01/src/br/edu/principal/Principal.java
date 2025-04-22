@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-        // Declaração do Scanner para entrada de dados 
+        
         Scanner scanner = new Scanner(System.in);
 
-        // Declaração das variáveis
+        
         double notaTrab, avalSem, exameFinal, media;
 
-        // Entrada das notas
+       
         System.out.print("Digite a nota do trabalho de laboratório: ");
         notaTrab = scanner.nextDouble();
 
@@ -20,13 +20,13 @@ public class Principal {
         System.out.print("Digite a nota do exame final: ");
         exameFinal = scanner.nextDouble();
 
-        // Cálculo da média ponderada
+       
         media = (notaTrab * 2 + avalSem * 3 + exameFinal * 5) / 10;
 
-        // Exibição da média
+
         System.out.printf("Média ponderada: %.2f\n", media);
 
-        // Determinação do conceito
+
         if (media >= 8.0 && media <= 10.0) {
             System.out.println("Obteve conceito A");
         } else if (media >= 7.0 && media < 8.0) {
