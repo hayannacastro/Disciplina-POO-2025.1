@@ -6,14 +6,14 @@ public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Entrada dos números
+        
         System.out.print("Digite o primeiro número: ");
         double num1 = scanner.nextDouble();
 
         System.out.print("Digite o segundo número: ");
         double num2 = scanner.nextDouble();
 
-        // Menu de opções
+        
         System.out.println("\nEscolha a operação:");
         System.out.println("1 - Média entre os números digitados");
         System.out.println("2 - Diferença do maior pelo menor");
@@ -25,7 +25,7 @@ public class Principal {
 
         System.out.println();
 
-        // Escolha da operação
+        
         switch (opcao) {
             case 1:
                 double media = (num1 + num2) / 2;
