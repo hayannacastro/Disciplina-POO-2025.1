@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-        // Scanner para entrada de dados
+      
         Scanner scanner = new Scanner(System.in);
 
-        // Declaração das variáveis
+        
         double A, B, C;
         int I;
 
-        // Entrada dos valores A, B e C
+ 
         System.out.print("Digite um valor para A: ");
         A = scanner.nextDouble();
 
@@ -21,12 +21,12 @@ public class Principal {
         System.out.print("Digite um valor para C: ");
         C = scanner.nextDouble();
 
-        // Entrada do valor de I
+  
         System.out.print("Digite um valor para I (1, 2 ou 3): ");
         I = scanner.nextInt();
 
-        // Verificação do valor de I e exibição das ordens
-        if (I == 1) { // Ordem crescente
+   
+        if (I == 1) { 
             if (A < B && A < C) {
                 if (B < C) {
                     System.out.println("A ordem crescente dos números é: " + A + " - " + B + " - " + C);
@@ -46,7 +46,7 @@ public class Principal {
                     System.out.println("A ordem crescente dos números é: " + C + " - " + B + " - " + A);
                 }
             }
-        } else if (I == 2) { // Ordem decrescente
+        } else if (I == 2) { 
             if (A > B && A > C) {
                 if (B > C) {
                     System.out.println("A ordem decrescente dos números é: " + A + " - " + B + " - " + C);
@@ -66,7 +66,7 @@ public class Principal {
                     System.out.println("A ordem decrescente dos números é: " + C + " - " + B + " - " + A);
                 }
             }
-        } else if (I == 3) { // Maior número entre os outros
+        } else if (I == 3) { 
             if (A > B && A > C) {
                 System.out.println("A ordem desejada é: " + B + " - " + A + " - " + C);
             } else if (B > A && B > C) {
@@ -78,7 +78,7 @@ public class Principal {
             System.out.println("Valor de I inválido! Digite 1, 2 ou 3.");
         }
 
-        // Fechar o scanner
+
         scanner.close();
     }
 }
