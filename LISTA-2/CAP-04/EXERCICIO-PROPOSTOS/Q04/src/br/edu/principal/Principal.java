@@ -6,7 +6,7 @@ public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Entrada dos três números
+        
         System.out.print("Digite o primeiro número: ");
         int num1 = scanner.nextInt();
 
@@ -16,7 +16,7 @@ public class Principal {
         System.out.print("Digite o terceiro número: ");
         int num3 = scanner.nextInt();
 
-        // Determinação do maior número
+        
         int maior = num1;
 
         if (num2 > maior) {
@@ -27,7 +27,7 @@ public class Principal {
             maior = num3;
         }
 
-        // Exibição do resultado
+        
         System.out.println("O maior número é: " + maior);
 
         scanner.close();
