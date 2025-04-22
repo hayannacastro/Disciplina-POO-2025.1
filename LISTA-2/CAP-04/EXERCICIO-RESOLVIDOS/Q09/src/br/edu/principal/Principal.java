@@ -5,26 +5,26 @@ import java.util.Date;
 
 public class Principal {
     public static void main(String[] args) {
-        // Obter a data e hora atual do sistema
+    
         Date dataHoraAtual = new Date();
 
-        // Definindo o formato de data
+    
         SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
         String dataFormatada = formatoData.format(dataHoraAtual);
 
-        // Definindo o formato de hora
+
         SimpleDateFormat formatoHora = new SimpleDateFormat("HH:mm");
         String horaFormatada = formatoHora.format(dataHoraAtual);
 
-        // Obter o dia, mês e ano da data
+       
         int dia = Integer.parseInt(dataFormatada.substring(0, 2));
         int mes = Integer.parseInt(dataFormatada.substring(3, 5));
         int ano = Integer.parseInt(dataFormatada.substring(6));
 
-        // Exibir a data por extenso
+     
         System.out.print("Data Atual: " + dia + "/" + mes + "/" + ano + " – ");
 
-        // Mostrar o mês por extenso
+       
         String mesExtenso = "";
         switch (mes) {
             case 1: mesExtenso = "janeiro"; break;
@@ -42,7 +42,7 @@ public class Principal {
         }
         System.out.println(mesExtenso);
 
-        // Exibir a hora
+    
         System.out.println("Hora Atual: " + horaFormatada);
     }
 }
