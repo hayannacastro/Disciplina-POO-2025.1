@@ -21,7 +21,6 @@ Trabalhar com ferramentas e ambientes de desenvolvimento Java.
 ## 🧰 O Que Você Vai Encontrar Aqui
 Este repositório contém:
 
-✅ Exercícios resolvidos com comentários explicativos;
 
 🧪 Projetos práticos realizados individualmente ou em grupo;
 
