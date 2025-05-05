@@ -130,3 +130,6 @@ Faça um programa que receba três números e mostre-os em ordem crescente. Supo
 #####                 SENÃO ESCREVA num3, num2, num1
 ##### FIM_ALGORITMO.
 
+
+# Questão 5.
+
