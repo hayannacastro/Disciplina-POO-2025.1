@@ -1,35 +1,35 @@
-## 1. Faça um programa contendo uma sub-rotina que retorne 1 se o número digitado for positivo ou 0 se
-for negativo.
-Solução:
-ALGORITMO
+## 1. Faça um programa contendo uma sub-rotina que retorne 1 se o número digitado for positivo ou 0 se for negativo.
 
-DECLARE num, x NUMÉRICO
+####Solução:
+####ALGORITMO
 
-LEIA num
+####DECLARE num, x NUMÉRICO
 
-x ← verifica(num)
+####LEIA num
 
-SE x = 0
+####x ← verifica(num)
 
-ENTÃO ESCREVA “Número positivo”
+####SE x = 0
 
-SENÃO ESCREVA “Número negativo”
+####ENTÃO ESCREVA “Número positivo”
 
-FIM_ALGORITMO.
+####SENÃO ESCREVA “Número negativo”
 
-SUB-ROTINA verifica(num NUMÉRICO)
+####FIM_ALGORITMO.
 
-DECLARE res NUMÉRICO
+####SUB-ROTINA verifica(num NUMÉRICO)
 
-SE num >= 0
+####DECLARE res NUMÉRICO
 
-ENTÃO res ← 1
+####SE num >= 0
 
-SENÃO res ← 0
+####ENTÃO res ← 1
 
-RETORNE res
+####SENÃO res ← 0
 
-FIM_SUB_ROTINA verifica
+####RETORNE res
+
+####FIM_SUB_ROTINA verifica
 
 
 ## 2. Faça um programa contendo uma sub-rotina que receba dois números positivos por parâmetro e re-
