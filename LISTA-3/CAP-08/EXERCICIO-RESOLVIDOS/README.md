@@ -36,142 +36,140 @@ Solução:
 torne a soma dos N números inteiros existentes entre eles.
 
 Solução:
-ALGORITMO
+#### ALGORITMO
 
-DECLARE num1, num2, s NUMÉRICO
+#### DECLARE num1, num2, s NUMÉRICO
 
-LEIA num1, num2
+#### LEIA num1, num2
 
-s ← somar(num1, num2)
+#### s ← somar(num1, num2)
 
-ESCREVA “soma = “, s
+#### ESCREVA “soma = “, s
 
-FIM_ALGORITMO.
+#### FIM_ALGORITMO.
 
-SUB-ROTINA somar(num1, num2 NUMÉRICO)
+#### SUB-ROTINA somar(num1, num2 NUMÉRICO)
 
-DECLARE i, s NUMÉRICO
+#### DECLARE i, s NUMÉRICO
 
-s ← 0
+#### s ← 0
 
-PARA i ← num1+1 ATÉ num2-1 FAÇA
+#### PARA i ← num1+1 ATÉ num2-1 FAÇA
 
-INÍCIO
+#### INÍCIO
 
-s ← s + i
+#### s ← s + i
 
-FIM
+#### FIM
 
-RETORNE s
+#### RETORNE s
 
-FIM_SUB_ROTINA somar
+#### FIM_SUB_ROTINA somar
 
 
 ## 3. Faça um programa contendo uma sub-rotina que receba três números inteiros a, b e c, sendo a maior
-que 1. A sub-rotina deverá somar todos os inteiros entre b e c que sejam divisíveis por a (inclusive b e
-c) e retornar o resultado para ser impresso.
+que 1. A sub-rotina deverá somar todos os inteiros entre b e c que sejam divisíveis por a (inclusive b e c) e retornar o resultado para ser impresso.
+
 Solução:
-ALGORITMO
+#### ALGORITMO
 
-DECLARE a, b, c, result NUMÉRICO
+#### DECLARE a, b, c, result NUMÉRICO
 
-REPITA
+#### REPITA
 
-LEIA a
+#### LEIA a
 
-ATÉ a>1
+#### ATÉ a>1
 
-LEIA b,c
+#### LEIA b,c
 
-result ← divisores(a, b, c)
+#### result ← divisores(a, b, c)
 
-ESCREVA “Soma dos inteiros = “, result
+#### ESCREVA “Soma dos inteiros = “, result
 
-FIM_ALGORITMO.
+#### FIM_ALGORITMO.
 
-SUB-ROTINA divisores(a, b, c NUMÉRICO)
+#### SUB-ROTINA divisores(a, b, c NUMÉRICO)
 
-DECLARE i, s, r NUMÉRICO
+#### DECLARE i, s, r NUMÉRICO
 
-s ← 0
+#### s ← 0
 
-PARA i ← b ATÉ c FAÇA
+#### PARA i ← b ATÉ c FAÇA
 
-INÍCIO
+#### INÍCIO
 
-r ← RESTO (i / a)
+#### r ← RESTO (i / a)
 
-SE r = 0
+#### SE r = 0
 
-ENTÃO s ← s + i
+#### ENTÃO s ← s + i
 
-FIM
+#### FIM
 
-RETORNE s
+#### RETORNE s
 
-FIM_SUB_ROTINA divisores
+#### FIM_SUB_ROTINA divisores
 
 
 ## 4. Faça uma sub-rotina que receba um único valor representando segundos. Essa sub-rotina deverá con-
-vertê-lo para horas, minutos e segundos. Todas as variáveis devem ser passadas como parâmetro, não
+vertê-lo para horas, minutos e segundos. Todas as variáveis devem ser passadas como parâmetro, não havendo variáveis globais.
 
-havendo variáveis globais.
 Solução:
-ALGORITMO
+#### ALGORITMO
 
-DECLARE seg NUMÉRICO
+#### DECLARE seg NUMÉRICO
 
-LEIA seg
+#### LEIA seg
 
-transformacao(seg);
+#### transformacao(seg);
 
-FIM_ALGORITMO.
+#### FIM_ALGORITMO.
 
-SUB-ROTINA transformacao(segundos NUMÉRICO)
+#### SUB-ROTINA transformacao(segundos NUMÉRICO)
 
-DECLARE h, m, s, r NUMÉRICO
+#### DECLARE h, m, s, r NUMÉRICO
 
-h ← segundos / 3600
+#### h ← segundos / 3600
 
-r ← RESTO(segundos / 3600)
+#### r ← RESTO(segundos / 3600)
 
-m ← r / 60
+#### m ← r / 60
 
-s = RESTO(r / 60)
+#### s = RESTO(r / 60)
 
-ESCREVA h, m, s
+#### ESCREVA h, m, s
 
-FIM_SUB_ROTINA transformacao
+#### FIM_SUB_ROTINA transformacao
 
 
 ## 5. Crie um programa que receba os valores antigo e atual de um produto. Chame uma sub-rotina que
-determine o percentual de acréscimo entre esses valores. O resultado deverá ser mostrado no programa
-principal.
+determine o percentual de acréscimo entre esses valores. O resultado deverá ser mostrado no programa principal.
 
 Solução:
-ALGORITMO
+#### ALGORITMO
 
-DECLARE precoantigo, precoatual, acrescimo NUMÉRICO
+#### DECLARE precoantigo, precoatual, acrescimo NUMÉRICO
 
-LEIA precoantigo
+#### LEIA precoantigo
 
-LEIA precoatual
+#### LEIA precoatual
 
-acrescimo ← calculo_reajuste(precoantigo, precoatual)
+#### acrescimo ← calculo_reajuste(precoantigo, precoatual)
 
-ESCREVA acrescimo
+#### ESCREVA acrescimo
 
-FIM_ALGORITMO.
+#### FIM_ALGORITMO.
 
-SUB-ROTINA calculo_reajuste(PA, PN NUMÉRICO)
+#### SUB-ROTINA calculo_reajuste(PA, PN NUMÉRICO)
 
-DECLARE result NUMÉRICO
+#### DECLARE result NUMÉRICO
 
-result ← (100 * PN – 100 * PA) / PA
+#### result ← (100 * PN – 100 * PA) / PA
 
-RETORNE result
+#### RETORNE result
 
-FIM_SUB_ROTINA calculo_reajuste
+#### FIM_SUB_ROTINA calculo_reajuste
 
 
 ## 6. Faça uma sub-rotina que receba como parâmetro um inteiro no intervalo de 1 a 9 e mostre a seguinte
@@ -190,39 +188,39 @@ tabela de multiplicação (no exemplo, n = 9):
 
 
 Solução: 
-ALGORITMO
+#### ALGORITMO
 
-DECLARE num NUMÉRICO
+#### DECLARE num NUMÉRICO
 
-REPITA
+#### REPITA
 
-LEIA num
+#### LEIA num
 
-ATÉ (num >= 1) E (num <= 9)
+#### ATÉ (num >= 1) E (num <= 9)
 
-multiplicacao(num)
+#### multiplicacao(num)
 
-FIM_ALGORITMO.
+#### FIM_ALGORITMO.
 
-SUB-ROTINA multiplicacao(n NUMÉRICO)
+#### SUB-ROTINA multiplicacao(n NUMÉRICO)
 
-DECLARE i, j NUMÉRICO
+#### DECLARE i, j NUMÉRICO
 
-PARA i ← 1 ATÉ n FAÇA
+#### PARA i ← 1 ATÉ n FAÇA
 
-INÍCIO
+#### INÍCIO
 
-PARA j ← 1 ATÉ i FAÇA
+#### PARA j ← 1 ATÉ i FAÇA
 
-INÍCIO
+#### INÍCIO
 
-ESCREVA i * j
+#### ESCREVA i * j
 
-FIM
+#### FIM
 
-FIM
+#### FIM
 
-FIM_SUB_ROTINA multiplicacao
+#### FIM_SUB_ROTINA multiplicacao
 
 
 ## 7. Elabore um programa contendo uma sub-rotina que receba as três notas de um aluno como parâme-
@@ -231,7 +229,7 @@ for P, deverá calcular a média ponderada, com pesos 5, 3 e 2. A média calcula
 ao programa principal para, então, ser mostrada.
 
 Solução:
-ALGORITMO
+#### ALGORITMO
 
 DECLARE nota1, nota2, nota3, m NUMÉRICO
 
